@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="An access planning demo; no authentication is implemented."><title>Login &amp; Access Prototype | Muhammad Numan</title><style>
+:root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#edf2fa;background:#08101e;--accent:#80b8ff}
+*{box-sizing:border-box}body{margin:0;min-width:320px}button,input,select,textarea{font:inherit}
+a{color:inherit;text-decoration:none}button{cursor:pointer}.shell{max-width:1140px;margin:auto;padding:0 28px}
+header{border-bottom:1px solid #28384e;background:#0b1628}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:850;letter-spacing:-.04em;font-size:22px}.brand span{color:var(--accent)}.nav a:last-child{font-size:13px;color:#bbc8dc}
+.hero{padding:72px 0 50px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:40px}
+.eyebrow{color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}
+h1{font-size:clamp(38px,5.5vw,70px);line-height:1.05;letter-spacing:-.055em;margin:15px 0 20px}
+p{color:#aabbd1;line-height:1.75}.hero p{max-width:570px;font-size:18px}.button{display:inline-block;background:var(--accent);color:#09101c;border:0;border-radius:11px;padding:13px 18px;font-weight:750;margin-top:12px}
+.stage{border:1px solid #334762;background:linear-gradient(145deg,#12233a,#0b1627);border-radius:20px;padding:22px;box-shadow:0 24px 65px #0006}
+.stage-bar{display:flex;align-items:center;gap:7px;color:#869ab5;font-size:12px;padding-bottom:18px;border-bottom:1px solid #2c3a52}
+.dot{width:8px;height:8px;background:var(--accent);border-radius:50%}.stage h2{font-size:19px;margin:23px 0 18px}.steps{display:grid;gap:13px}
+.step{display:grid;grid-template-columns:28px 1fr;align-items:start;gap:10px;padding:12px;border:1px solid #34445d;border-radius:10px;background:#111d30}
+.num{display:grid;place-items:center;background:var(--accent);color:#06101c;font-size:12px;font-weight:800;border-radius:50%;width:24px;height:24px}.step small{display:block;color:#91a5bd;margin-bottom:3px}.step strong{font-size:14px;font-weight:650}
+.content{padding:34px 0 90px}.content h2{font-size:30px;margin:0 0 8px}.content>p{margin-bottom:25px}.demo{padding:28px;border:1px solid #34455f;border-radius:18px;background:#101d30}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.field{display:grid;gap:7px}.field label{color:#ccd8e7;font-size:13px;font-weight:700}
+input,select,textarea{width:100%;border:1px solid #465a74;border-radius:9px;background:#0a1628;color:white;padding:12px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--accent)}.field-wide{grid-column:1/-1}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.secondary{background:#1b2b41;border:1px solid #48607b;border-radius:9px;color:#e5effa;padding:10px 15px;font-weight:650}.secondary:hover,.secondary.active{border-color:var(--accent);color:var(--accent)}
+.result{border:1px solid #385776;background:#0b192c;padding:19px;border-radius:11px;margin-top:22px;min-height:72px;white-space:pre-wrap;line-height:1.55;color:#e9f2ff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tile{border:1px solid #3a4b63;border-radius:11px;padding:19px;background:#142238}.tile h3{margin:0 0 7px;font-size:17px}.tile p{margin:0;font-size:13px}.tile button{margin-top:14px}
+.badge{display:inline-block;padding:6px 10px;color:var(--accent);background:#ffffff0b;border:1px solid #ffffff23;border-radius:999px;font-size:12px;font-weight:750}
+footer{padding:28px 0;border-top:1px solid #293950;color:#8193aa;font-size:13px}.disclaimer{font-size:13px;margin-top:15px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;padding:55px 0 30px}.cards{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field-wide{grid-column:auto}}
+</style></head><body>
+<header><div class="shell nav"><a class="brand" href="#top">M<span>·</span>Numan <span>Studio</span></a><a href="#demo-area">Explore demo ↓</a></div></header>
+<main id="top"><div class="shell hero"><div><span class="eyebrow">Custom Web Apps · Interactive concept</span><h1>Login &amp; Access Prototype</h1><p>An access planning demo; no authentication is implemented.</p><a class="button" href="#demo-area">Try the workflow →</a><p class="disclaimer">Portfolio prototype with sample data. Explore the source code and implementation notes in the repository.</p></div><div class="stage"><div class="stage-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span style="margin-left:auto">WORKFLOW / 01</span></div><h2>How it works</h2><div class="steps"><div class="step"><span class="num">1</span><div><small>INPUT</small><strong>Access request</strong></div></div><div class="step"><span class="num">2</span><div><small>PROCESS</small><strong>Role selection</strong></div></div><div class="step"><span class="num">3</span><div><small>RESULT</small><strong>Reviewable access plan</strong></div></div></div></div></div>
+<section class="shell content" id="demo-area"><span class="eyebrow">Hands-on example</span><h2>Explore the concept</h2><p>Try the sample flow below. Your entries stay in this browser session.</p><div class="demo" id="demo"></div><div id="output" class="result" tabindex="-1" aria-live="polite">Interact with the demo to see the result.</div><p class="disclaimer">No account, external service, payment, or persistent storage is connected.</p></section></main><footer><div class="shell">© Muhammad Numan · Web service portfolio demo</div></footer><script>
+const config = {"title": "Login & Access Prototype", "mode": "workflow", "result": "Reviewable access plan"};
+const out = document.querySelector('#output');
+const show = (message) => { out.textContent = message; out.focus(); };
+const email = document.querySelector('#email');
+if (config.mode === 'site') {
+  document.querySelector('#demo').innerHTML = `<div class="cards"><div class="tile"><h3>Explore</h3><p>Clear information tailored to the visitor's goal.</p></div><div class="tile"><h3>Understand</h3><p>Benefits, proof and useful details in one place.</p></div><div class="tile"><h3>Enquire</h3><p>One visible next step to start a conversation.</p></div></div><div class="form-grid" style="margin-top:22px"><div class="field"><label for="name">Your name</label><input id="name" autocomplete="name" placeholder="Alex Morgan"></div><div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="alex@example.com"></div><div class="field field-wide"><label for="message">What would you like to discuss?</label><textarea id="message" rows="3" placeholder="Tell us about your goal"></textarea></div></div><button class="button" id="go" type="button">Preview enquiry</button>`;
+  document.querySelector('#go').onclick = () => {const name=document.querySelector('#name').value.trim();const address=document.querySelector('#email').value.trim();if(!name||!/^\S+@\S+\.\S+$/.test(address)){show('Please enter a name and valid email address.');return}show(`Enquiry preview for ${name} (${address})\nInterest: ${config.title}\nMessage: ${document.querySelector('#message').value.trim()||'Please contact me.'}\n\nDemo only — nothing was sent.`)};
+}
+if (config.mode === 'workflow') {
+  document.querySelector('#demo').innerHTML = `<div class="form-grid"><div class="field"><label for="name">Contact or project name</label><input id="name" placeholder="Example Studio"></div><div class="field"><label for="choice">Primary need</label><select id="choice"><option>Website</option><option>WordPress</option><option>E-commerce</option><option>Custom application</option></select></div><div class="field"><label for="budget">Estimated budget</label><input id="budget" type="number" min="0" value="2500"></div><div class="field"><label for="timeline">Target date</label><input id="timeline" type="date"></div></div><button class="button" id="go" type="button">Build preview</button>`;
+  document.querySelector('#go').onclick=()=>{const name=document.querySelector('#name').value.trim();const budget=Number(document.querySelector('#budget').value);if(!name||budget<0){show('Add a project name and a valid budget.');return}show(`Request: ${name}\nService: ${document.querySelector('#choice').value}\nBudget: $${budget.toLocaleString()}\nNext step: ${config.result}.\n\nDemo only — no record was saved or submitted.`)};
+}
+if (config.mode === 'catalog') {
+  let cart=[];const products=[['Starter',49],['Growth',89],['Premium',149]];
+  document.querySelector('#demo').innerHTML = `<div class="cards">${products.map(([n,p],i)=>`<div class="tile"><span class="badge">Sample item ${i+1}</span><h3 style="margin-top:13px">${n}</h3><p>$${p} · demonstration price</p><button class="secondary" data-index="${i}" type="button">Add to cart</button></div>`).join('')}</div><div class="actions"><button class="secondary" id="clear" type="button">Clear cart</button></div>`;
+  const render=()=>show(cart.length?`Cart: ${cart.map(x=>x[0]).join(', ')}\nTotal: $${cart.reduce((sum,x)=>sum+x[1],0)}\n\nCheckout preview only — no payment or order.`:'Cart is empty. Choose a sample item.');
+  document.querySelectorAll('[data-index]').forEach(btn=>btn.onclick=()=>{cart.push(products[Number(btn.dataset.index)]);render()});document.querySelector('#clear').onclick=()=>{cart=[];render()};render();
+}
+if (config.mode === 'booking') {
+  const busy=new Set(['10:30','14:00']);let selected='';const slots=['09:00','10:30','11:00','14:00','15:30'];
+  document.querySelector('#demo').innerHTML = `<div class="field"><label for="date">Preferred date</label><input id="date" type="date"></div><div class="actions">${slots.map(t=>`<button class="secondary" data-slot="${t}" type="button">${t}${busy.has(t)?' · busy':''}</button>`).join('')}</div><button class="button" id="go" type="button">Check booking</button>`;
+  document.querySelectorAll('[data-slot]').forEach(btn=>btn.onclick=()=>{selected=btn.dataset.slot;document.querySelectorAll('[data-slot]').forEach(x=>x.classList.toggle('active',x===btn));show(`Selected ${selected}. Choose a date and check availability.`)});
+  document.querySelector('#go').onclick=()=>{const date=document.querySelector('#date').value;show(!date||!selected?'Choose a date and time.':busy.has(selected)?`${selected} is unavailable in this sample calendar. Choose another time.`:`${date} at ${selected} is available in this sample calendar. No reservation was created.`)};
+}
+if (config.mode === 'audit') {
+  let checks=['Clear page title','Readable mobile layout','Descriptive links','Image alternative text','Fast-loading assets'];
+  document.querySelector('#demo').innerHTML=`<div class="form-grid">${checks.map((x,i)=>`<label class="tile" style="display:flex;gap:10px;align-items:center"><input type="checkbox" data-check="${i}" style="width:18px;accent-color:var(--accent)"><span>${x}</span></label>`).join('')}</div><button class="button" id="go" type="button">Review checklist</button>`;
+  document.querySelector('#go').onclick=()=>{const done=[...document.querySelectorAll('[data-check]')].filter(x=>x.checked).length;show(`${done}/${checks.length} sample checks marked complete.\nNext: review remaining items manually.\n\nThis worksheet does not scan your actual website.`)};
+}
+if (config.mode === 'dashboard') {
+  let events=[2,4,3,5,7];document.querySelector('#demo').innerHTML=`<div class="cards"><div class="tile"><h3 id="total"></h3><p>Sample events</p></div><div class="tile"><h3 id="peak"></h3><p>Peak day</p></div><div class="tile"><h3 id="average"></h3><p>Daily average</p></div></div><div class="actions"><button class="button" id="go" type="button">Add example event</button><button class="secondary" id="reset" type="button">Reset</button></div>`;
+  const render=()=>{const total=events.reduce((a,b)=>a+b,0);document.querySelector('#total').textContent=total;document.querySelector('#peak').textContent=Math.max(...events);document.querySelector('#average').textContent=(total/events.length).toFixed(1);show(`Day-by-day sample counts: ${events.join(' · ')}\nNo live analytics or alerts are connected.`)};
+  document.querySelector('#go').onclick=()=>{events[events.length-1]++;render()};document.querySelector('#reset').onclick=()=>{events=[2,4,3,5,7];render()};render();
+}
+if (config.mode === 'mapper') {
+  document.querySelector('#demo').innerHTML=`<div class="field"><label for="payload">Sample JSON payload</label><textarea id="payload" rows="6">{"full_name":"Alex Morgan","contact_email":"alex@example.com","service":"website"}</textarea></div><button class="button" id="go" type="button">Normalize data</button>`;
+  document.querySelector('#go').onclick=()=>{try{const x=JSON.parse(document.querySelector('#payload').value);show(JSON.stringify({name:String(x.full_name||'').trim(),email:String(x.contact_email||'').trim(),interest:String(x.service||'').trim()},null,2))}catch{show('Invalid JSON. Please correct the payload.')}};
+}
+</script></body></html>
