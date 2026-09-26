@@ -1,6 +1,6 @@
 # Web & WordPress service demos
 
-42 standalone browser prototypes. Each folder has a self-contained index.html and README.md. Open the HTML file in any modern browser. All examples use sample data; they do not send enquiries, take payments or connect to live WordPress, CRM, or analytics services.
+48 standalone browser prototypes. Each folder has a self-contained index.html and README.md. Open the HTML file in any modern browser. All examples use sample data; they do not send enquiries, take payments or connect to live WordPress, CRM, or analytics services.
 
 | Project | Area | Demonstrates |
 |---|---|---|
@@ -47,3 +47,10 @@
 | [api-workbench](./api-workbench/) | Custom Software | REST API Workbench |
 | [modernization-planner](./modernization-planner/) | Custom Software | Modernization Planner |
 | [automation-center](./automation-center/) | Custom Software | Automation Center |
+
+| [marketplace-mobile](./marketplace-mobile/) | Mobile Applications | Mobile Marketplace |
+| [appointment-mobile](./appointment-mobile/) | Mobile Applications | Appointment Booking App |
+| [learning-mobile](./learning-mobile/) | Mobile Applications | Mobile Learning App |
+| [field-service-mobile](./field-service-mobile/) | Mobile Applications | Field Service App |
+| [workforce-attendance-mobile](./workforce-attendance-mobile/) | Mobile Applications | Workforce Attendance |
+| [delivery-tracking-mobile](./delivery-tracking-mobile/) | Mobile Applications | Delivery Tracking App |
