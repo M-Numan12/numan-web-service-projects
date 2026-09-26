@@ -1,6 +1,6 @@
 # Web & WordPress service demos
 
-36 standalone browser prototypes. Each folder has a self-contained index.html and README.md. Open the HTML file in any modern browser. All examples use sample data; they do not send enquiries, take payments or connect to live WordPress, CRM, or analytics services.
+42 standalone browser prototypes. Each folder has a self-contained index.html and README.md. Open the HTML file in any modern browser. All examples use sample data; they do not send enquiries, take payments or connect to live WordPress, CRM, or analytics services.
 
 | Project | Area | Demonstrates |
 |---|---|---|
@@ -40,3 +40,10 @@
 | [conversion-landing-test](./conversion-landing-test/) | Lead Generation | Conversion Landing Concept |
 | [analytics-event-demo](./analytics-event-demo/) | Lead Generation | Event Analytics |
 | [inquiry-alert-demo](./inquiry-alert-demo/) | Lead Generation | Inquiry Alert Queue |
+
+| [crm-operations-hub](./crm-operations-hub/) | Custom Software | CRM Operations Hub |
+| [academy-management-system](./academy-management-system/) | Custom Software | Academy Management System |
+| [saas-tenant-console](./saas-tenant-console/) | Custom Software | SaaS Tenant Console |
+| [api-workbench](./api-workbench/) | Custom Software | REST API Workbench |
+| [modernization-planner](./modernization-planner/) | Custom Software | Modernization Planner |
+| [automation-center](./automation-center/) | Custom Software | Automation Center |
